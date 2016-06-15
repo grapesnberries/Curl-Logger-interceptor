@@ -1,6 +1,6 @@
 # Curl-Logger-interceptor
 
-A Library that logs your request in CURL, Used with [Retrofit](https://github.com/square/retrofit/tree/parent-2.0.2) Http client.
+A library that logs your request in cURL, used with [Retrofit](https://github.com/square/retrofit/tree/parent-2.0.2) HTTP client.
 
 # How it works
 
@@ -13,7 +13,7 @@ dependencies {
 }
 ```
 
-To start Logging your requests, add curl interceptor to your OkHttpClient
+To start logging your requests, add a cURL interceptor to your `OkHttpClient`
 
 ```java
 OkHttpClient.Builder client = new OkHttpClient.Builder()
