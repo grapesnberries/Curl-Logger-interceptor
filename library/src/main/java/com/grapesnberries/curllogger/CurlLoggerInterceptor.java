@@ -17,6 +17,19 @@ import okio.Buffer;
 public class CurlLoggerInterceptor implements Interceptor {
     private StringBuilder curlCommandBuilder;
     private final Charset UTF8 = Charset.forName("UTF-8");
+    private String tag = null;
+
+    public CurlLoggerInterceptor() {
+    }
+
+    /**
+     * Set logcat tag for curl lib to make it ease to filter curl logs only.
+     * @param tag
+     */
+    public CurlLoggerInterceptor(String tag) {
+        this.tag = tag;
+    }
+
 
     @Override
     public Response intercept(Chain chain) throws IOException {
@@ -51,7 +64,7 @@ public class CurlLoggerInterceptor implements Interceptor {
         curlCommandBuilder.append(" \"" + request.url().toString() + "\"");
         curlCommandBuilder.append(" -L");
 
-        CurlPrinter.print(request.url().toString() , curlCommandBuilder.toString());
+        CurlPrinter.print(tag, request.url().toString(), curlCommandBuilder.toString());
         return chain.proceed(request);
     }
 
