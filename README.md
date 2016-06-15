@@ -29,7 +29,7 @@ OkHttpClient.Builder client = new OkHttpClient.Builder()
 
 Yes you are done! Once you make any request you will find the output _Curl_ command in you logcat like that
 
-<img src="https://s32.postimg.org/simnty745/Screen_Shot_2016_06_15_at_3_33_07_PM.jpg"/>
+<img src="https://s32.postimg.org/9cd27e8dh/Screen_Shot_2016_06_15_at_3_33_1_07_PM.png"/>
 
 # Customized Log Tag
 
