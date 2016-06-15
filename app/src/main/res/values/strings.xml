@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CURL logger sample</string>
+    <string name="github_users">Github Users Sample</string>
+</resources>
