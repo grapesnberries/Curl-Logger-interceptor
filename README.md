@@ -1,4 +1,5 @@
 # Curl-Logger-interceptor
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Curl--Logger--interceptor-green.svg?style=true)](https://android-arsenal.com/details/1/3924)
 
 A library that logs your request in cURL, used with [Retrofit](https://github.com/square/retrofit/tree/parent-2.0.2) HTTP client.
 
